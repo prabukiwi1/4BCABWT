@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(90deg,gray,white,black);
+}
+img 
+{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+}
+.container
+{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 40%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) rotateZ(-10deg);
+    animation: rot 30s linear infinite;
+}
+@keyframes rot {
+50%
+{
+transform: rotateX(50deg);
+}
+100% {
+    transform: rotateX(-50deg);
+
+}
+}
+
+.images
+{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    from {
+
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+img:nth-child(1)
+{
+    transform: rotateY(60deg) translateZ(350px);
+}
+img:nth-child(2)
+{
+    transform: rotateY(120deg) translateZ(350px);
+}
+img:nth-child(3)
+{
+    transform: rotateY(180deg) translateZ(350px);
+}
+img:nth-child(4)
+{
+    transform: rotateY(240deg) translateZ(350px);
+}
+img:nth-child(5)
+{
+    transform: rotateY(300deg) translateZ(350px);
+}
+img:nth-child(6)
+{
+    transform: rotateY(360deg) translateZ(350px);
+}
+img:hover
+{
+    width: 450px;
+    height: 400px;
+    cursor: pointer;
+}
