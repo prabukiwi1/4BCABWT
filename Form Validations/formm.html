@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tee.js"></script>
+</head>
+<body>
+<form onsubmit="return validate()" action="mess.html">
+    <input id="uname" onkeypress="return test(event)" placeholder="UserName" type="text">
+    <label id="lname" style="visibility: hidden;">*Required</label>
+    <br><br>
+    <input id="pass" placeholder="PassWord" type="password">
+    <label id="lpname" style="visibility: hidden;">*Required</label>
+    <label id="ppname" style="visibility: hidden;">*Password Too Short</label>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
