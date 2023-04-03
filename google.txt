@@ -1,0 +1,21 @@
+function doGet(e)
+{
+  var ss=SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1tZH2XyI4sLEnle2NtpC0CWu0t8B9KMn1of-ac2SZxqA/edit#gid=0");
+  var sheet=ss.getSheetByName("Sheet1");
+
+  addUser(e,sheet);
+}
+function doPost(e)
+{
+  var ss=SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1tZH2XyI4sLEnle2NtpC0CWu0t8B9KMn1of-ac2SZxqA/edit#gid=0");
+  var sheet=ss.getSheetByName("Sheet1");
+
+  addUser(e,sheet);
+}
+
+function addUser(e,sheet)
+{
+  var Name=e.parameter.Name;
+  var Email=e.parameter.Email;
+  sheet.appendRow([Name,Email]);
+}
