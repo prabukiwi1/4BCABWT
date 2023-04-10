@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Rule.dtd" type="application/xml-dtd"?>
+<Employee>
+    <Emp id="E001">
+        <name>123</name>
+        <age>-1000</age>
+        <salary>156000</salary>
+    </Emp>
+    <Emp id="E002">
+        <name>xyz</name>
+        <age>22</age>
+        <salary>156000</salary>
+    </Emp>
+</Employee>

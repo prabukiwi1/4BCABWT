@@ -1,0 +1,35 @@
+<bca:schema xmlns:bca="http://www.w3.org/2001/XMLSchema">
+<bca:element name="Employee">
+<bca:complexType>
+<bca:sequence>
+<bca:element name="Emp" maxOccurs="unbounded">
+<bca:complexType>
+<bca:sequence>
+<bca:element name="Name" type="bca:string"></bca:element>
+<bca:element name="Age">
+<bca:simpleType>
+<bca:restriction base="bca:integer">
+    <bca:minInclusive value="1"></bca:minInclusive>
+    <bca:maxInclusive value="120"></bca:maxInclusive>
+
+</bca:restriction>
+</bca:simpleType>
+</bca:element>
+<bca:element name="Salary">
+    <bca:simpleType>
+        <bca:restriction base="bca:integer">
+<bca:minInclusive value="65000"></bca:minInclusive>
+<bca:maxInclusive value="200000"></bca:maxInclusive>
+        </bca:restriction>
+    </bca:simpleType>
+</bca:element>
+
+</bca:sequence>
+
+</bca:complexType>
+</bca:element>
+</bca:sequence>
+<bca:attribute name="Eid" type="bca:ID"></bca:attribute>
+</bca:complexType>
+</bca:element>
+</bca:schema>
