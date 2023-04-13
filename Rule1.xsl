@@ -17,16 +17,34 @@
         <th>Emp-Name</th>
         <th>Emp-Salary</th>
         <th>Emp-Age</th>
+        <th>Emp-Des</th>
         </tr>
         <xsl:for-each select="Emp">
-        <xsl:if test="Salary>100000">
+        <xsl:if test="Name=''">
+        <xsl:message terminate="yes">
+         Name Should not be empty
+        </xsl:message>
+            
+        </xsl:if>
         <tr>
         <td><xsl:value-of select="@Eid"/></td>
         <td><xsl:value-of select="Name"/></td>
         <td><xsl:value-of select="Salary"/></td>
         <td><xsl:value-of select="Age"/></td>
+        <td>
+        <xsl:choose>
+            <xsl:when test="Salary>100000">
+                Senior Emp
+            </xsl:when>
+            <xsl:when test="Salary>65000">
+                Junior Emp
+            </xsl:when>
+            <xsl:otherwise>
+                Emp
+            </xsl:otherwise>
+        </xsl:choose>
+        </td>
         </tr>
-        </xsl:if>
         </xsl:for-each>
         </table>
         </body>
