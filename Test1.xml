@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Rule.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="Rule1.xsl" type="text/xsl"?>
+<Employee>
+    <Emp Eid="e1">
+        <Name>Indu</Name>
+        <Age>33</Age>
+        <Salary>84000</Salary>
+    </Emp>
+    <Emp Eid="e2">
+        <Name>Tanila</Name>
+        <Age>22</Age>
+        <Salary>67000</Salary>
+    </Emp>
+    <Emp Eid="e3">
+        <Name>Rithul</Name>
+        <Age>29</Age>
+        <Salary>150000</Salary>
+    </Emp>
+    <Emp Eid="e4">
+        <Name>Tamirra</Name>
+        <Age>24</Age>
+        <Salary>120000</Salary>
+    </Emp>
+</Employee>
